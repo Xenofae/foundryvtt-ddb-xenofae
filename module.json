@@ -1,98 +1,94 @@
 {     
-   "title": "Xenofae DDB",
-   "id": "xenofae-ddb-module",
-   "description": "Sharing data across worlds",   
-   "version": "1.0.0",
-   "compatibility": {
-    "minimum": 10,
-    "verified": 10
-  },
-  "relationships": {
-    "systems": [
-      {
-        "id": "dnd5e",
-        "type": "system",
-        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
-        "compatibility": {
-          "verified": "2.0.2"
+    "id": "xenofae-ddb-module",
+    "name": "xenofae-ddb-module",
+    "title": "Xenofae DDB",
+    "description": "Sharing data across worlds",   
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Xenofae"
         }
-      }
-    ]
-  },
-  "packs": [
-    {
-    "name": "ddb-classes",
-    "label": "Xenofae DBB Classes",
-    "path": "packs/xenfoae-ddb-classes.db",
-    "entity": "Item",
-    "type": "Item",
-    "system": "dnd5e"
+    ],
+    "minimumCoreVersion": "0.8.6",
+    "compatibleCoreVersion": "9",
+    "compatibility": {
+        "minimum": "0.8.6",
+        "verified": "10"
     },
-    {
-    "name": "ddb-class-features",
-    "label": "Xenofae DBB Class Features",
-    "path": "packs/ddb-class-features.db",
-    "entity": "Item",
-    "type": "Item",
-    "system": "dnd5e"
-    },
-    {
-        "name": "ddb-feats",
-        "label": "Xenofae DBB Feats",
-        "path": "packs/ddb-feats.db",
-        "entity": "Item",
-        "type": "Item",
-        "system": "dnd5e"
-    },
-    {
-        "name": "ddb-items",
-        "label": "Xenofae DBB Items",
-        "path": "packs/ddb-items.db",
-        "entity": "Item",
-        "type": "Item",
-        "system": "dnd5e"
-    },
-    {
-    "name": "xenofae-ddb-monsters",
-    "label": "Xenofae DBB Monsters",
-    "path": "packs/ddb-monsters.db",
-    "entity": "Actor",
-    "type": "Actor",
-    "system": "dnd5e"
-    },
-    {
-        "name": "xenofae-ddb-races",
-        "label": "Xenofae DBB Races",
-        "path": "packs/ddb-races.db",
-        "entity": "Item",
-        "type": "Item",
-        "system": "dnd5e"
-    },
-    {
-        "name": "xenofae-ddb-racial-traits",
-        "label": "Xenofae DBB Racial Traits",
-        "path": "packs/ddb-racial-traits.db",
-        "entity": "Item",
-        "type": "Item",
-        "system": "dnd5e"
-    },
-    {
-        "name": "xenofae-ddb-spells",
-        "label": "Xenofae DBB Spells",
-        "path": "packs/ddb-spells.db",
-        "entity": "Item",
-        "type": "Item",
-        "system": "dnd5e"
-    },
-    {
-        "name": "xenofae-ddb-tables",
-        "label": "Xenofae DBB Tables",
-        "path": "packs/ddb-tables.db",
-        "entity": "RollTable",
-        "type": "RollTable",
-        "system": "dnd5e"
-    }        
-  ],
-  "manifest": "https://github.com/Xenofae/foundryvtt-ddb-xenofae/blob/main/module.json",
-  "download": "https://github.com/Xenofae/foundryvtt-ddb-xenofae/blob/main/xenofae-ddb-module.zip"
+    "packs": [
+        {
+            "name": "ddb-classes",
+            "label": "Xenofae DBB Classes",
+            "path": "packs/ddb-classes.db",
+            "entity": "Item",
+            "type": "Item",
+            "system": "dnd5e"
+        },
+        {
+            "name": "ddb-class-features",
+            "label": "Xenofae DBB Class Features",
+            "path": "packs/ddb-class-features.db",
+            "entity": "Item",
+            "type": "Item",
+            "system": "dnd5e"
+        },
+        {
+            "name": "ddb-feats",
+            "label": "Xenofae DBB Feats",
+            "path": "packs/ddb-feats.db",
+            "entity": "Item",
+            "type": "Item",
+            "system": "dnd5e"
+        },
+        {
+            "name": "ddb-items",
+            "label": "Xenofae DBB Items",
+            "path": "packs/ddb-items.db",
+            "entity": "Item",
+            "type": "Item",
+            "system": "dnd5e"
+        },
+        {
+            "name": "xenofae-ddb-monsters",
+            "label": "Xenofae DBB Monsters",
+            "path": "packs/ddb-monsters.db",
+            "entity": "Actor",
+            "type": "Actor",
+            "system": "dnd5e"
+        },
+        {
+            "name": "xenofae-ddb-races",
+            "label": "Xenofae DBB Races",
+            "path": "packs/ddb-races.db",
+            "entity": "Item",
+            "type": "Item",
+            "system": "dnd5e"
+        },
+        {
+            "name": "xenofae-ddb-racial-traits",
+            "label": "Xenofae DBB Racial Traits",
+            "path": "packs/ddb-racial-traits.db",
+            "entity": "Item",
+            "type": "Item",
+            "system": "dnd5e"
+        },
+        {
+            "name": "xenofae-ddb-spells",
+            "label": "Xenofae DBB Spells",
+            "path": "packs/ddb-spells.db",
+            "entity": "Item",
+            "type": "Item",
+            "system": "dnd5e"
+        },
+        {
+            "name": "xenofae-ddb-tables",
+            "label": "Xenofae DBB Tables",
+            "path": "packs/ddb-tables.db",
+            "entity": "RollTable",
+            "type": "RollTable",
+            "system": "dnd5e"
+        }        
+    ],
+    "manifest": "https://github.com/Xenofae/foundryvtt-ddb-xenofae/blob/main/module.json",
+    "download": "https://github.com/Xenofae/foundryvtt-ddb-xenofae/blob/main/xenofae-ddb-module.zip"
  }
