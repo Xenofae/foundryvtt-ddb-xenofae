@@ -1,87 +1,82 @@
-{     
-   "title": "Xenofae DDB",
-   "id": "xenofae-ddb",
-   "description": "Sharing data across worlds",   
-   "version": "1.0.0",
-   "compatibility": {
-    "minimum": 10,
-    "verified": 10
-  },
-  "relationships": {
-    "systems": [
-      {
-        "id": "dnd5e",
-        "type": "system",
-        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
-        "compatibility": {
-          "verified": "2.0.2"
+{
+    "id": "my-content-module",
+    "name": "my-content-module",
+    "title": "My Content Module",
+    "description": "A collection of my content.",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "My Name",
+            "discord": "MyDiscordUsername#42",
+            "url": "https://www.mywebsite.com/"
         }
-      }
-    ]
-  },
-  "packs": [
-    {
-    "name": "xenofae-ddb-classes",
-    "label": "Xenofae DBB Classes",
-    "path": "packs/xenfoae-ddb-classes.db",
-    "entity": "Item",
-    "module": "xenofae-ddb"
+    ],
+    "minimumCoreVersion": "0.8.6",
+    "compatibleCoreVersion": "9",
+    "compatibility": {
+        "minimum": "0.8.6",
+        "verified": "10"
     },
-    {
-    "name": "xenofae-ddb-class-features",
-    "label": "Xenofae DBB Class Features",
-    "path": "packs/xenfoae-ddb-class-features.db",
-    "entity": "Item",
-    "module": "xenofae-ddb"
-    },
-    {
-        "name": "xenofae-ddb-feats",
-        "label": "Xenofae DBB Feats",
-        "path": "packs/xenfoae-ddb-feats.db",
-        "entity": "Item",
-        "module": "xenofae-ddb"
-    },
-    {
-        "name": "xenofae-ddb-items",
-        "label": "Xenofae DBB Items",
-        "path": "packs/xenfoae-ddb-items.db",
-        "entity": "Item",
-        "module": "xenofae-ddb"
-    },
-    {
-    "name": "xenofae-ddb-monsters",
-    "label": "Xenofae DBB Monsters",
-    "path": "packs/xenfoae-ddb-monsters.db",
-    "entity": "Actor",
-    "module": "xenofae-ddb"
-    },
-    {
-        "name": "xenofae-ddb-races",
-        "label": "Xenofae DBB Races",
-        "path": "packs/xenfoae-ddb-races.db",
-        "entity": "Item",
-        "module": "xenofae-ddb"
-    },
-    {
-        "name": "xenofae-ddb-racial-traits",
-        "label": "Xenofae DBB Racial Traits",
-        "path": "packs/xenfoae-ddb-racial-traits.db",
-        "entity": "Item",
-        "module": "xenofae-ddb"
-    },
-    {
-        "name": "xenofae-ddb-spells",
-        "label": "Xenofae DBB Spells",
-        "path": "packs/xenfoae-ddb-spells.db",
-        "entity": "Item",
-        "module": "xenofae-ddb"
-    },
-    {
-        "name": "xenofae-ddb-tables",
-        "label": "Xenofae DBB Tables",
-        "path": "packs/xenfoae-ddb-tables.db",
-        "entity": "RollTable",
-        "module": "xenofae-ddb"
-    }        
-]
- }
+    "packs": [
+        {
+            "name": "module-creatures",
+            "label": "Module Creatures",
+            "path": "./packs/creatures.db",
+            "entity": "Actor",
+            "type": "Actor",
+            "system": "dnd5e"
+        },
+        {
+            "name": "module-items",
+            "label": "Module Items",
+            "path": "./packs/items.db",
+            "entity": "Item",
+            "type": "Item",
+            "system": "dnd5e"
+        },
+        {
+            "name": "module-scenes",
+            "label": "Module Scenes",
+            "path": "./packs/scenes.db",
+            "entity": "Scene",
+            "type": "Scene"
+        },
+        {
+            "name": "module-journal-entries",
+            "label": "Module Journal Entries",
+            "path": "./packs/journal-entries.db",
+            "entity": "JournalEntry",
+            "type": "JournalEntry"
+        },
+        {
+            "name": "module-macros",
+            "label": "Module Macros",
+            "path": "./packs/macros.db",
+            "entity": "Macro",
+            "type": "Macro"
+        },
+        {
+            "name": "module-roll-tables",
+            "label": "Module Roll Tables",
+            "path": "./packs/roll-tables.db",
+            "entity": "RollTable",
+            "type": "RollTable"
+        },
+        {
+            "name": "module-playlists",
+            "label": "Module Playlists",
+            "path": "./packs/playlists.db",
+            "entity": "Playlist",
+            "type": "Playlist"
+        },
+        {
+            "name": "module-adventures",
+            "label": "Module Adventures",
+            "path": "./packs/adventures.db",
+            "entity": "Adventure",
+            "type": "Adventure"
+        }
+    ],
+    "manifest": "https://gitlab.com/encounterlibrary/my-content-module/-/raw/main/module.json",
+    "download": "https://gitlab.com/encounterlibrary/my-content-module/-/raw/main/my-content-module.zip"
+  }
