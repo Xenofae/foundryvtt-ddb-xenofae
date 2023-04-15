@@ -89,6 +89,6 @@
             "system": "dnd5e"
         }        
     ],
-    "manifest": "https://github.com/Xenofae/foundryvtt-ddb-xenofae/blob/main/module.json",
-    "download": "https://github.com/Xenofae/foundryvtt-ddb-xenofae/blob/main/xenofae-ddb-module.zip"
+    "manifest": "https://raw.githubusercontent.com/Xenofae/foundryvtt-ddb-xenofae/main/module.json",
+    "download": "https://github.com/Xenofae/foundryvtt-ddb-xenofae/blob/main/xenofae-ddb-module.zip?raw=true"
  }
